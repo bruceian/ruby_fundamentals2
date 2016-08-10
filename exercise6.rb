@@ -7,10 +7,6 @@ def show_list(list)
   puts " "
 end
 
-show_list(grocery_list)
-
 grocery_list << "rice"
-show_list(grocery_list)
-
 grocery_list << "salmon" # I forgot salmon as well
 show_list(grocery_list)
