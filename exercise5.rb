@@ -1,6 +1,9 @@
-def temp_convert(temp_f)
-  temp_c = (temp_f.to_i - 32) * (5/9)
-  puts "#{temp_f} degrees Farenheit is also #{temp_c} degrees Celcius"
+puts "Enter temperature in degrees Farenheit: "
+temp_f = gets.chomp.to_i
+
+def temp_convert(f)
+  temp_c = ( f - 32.0 ) * ( 5.0 / 9.0 )
+  return "The temperature is #{f} degrees Farenheit or #{temp_c} degrees Celcius."
 end
 
-puts "Enter a temperature in Farenheit: "
+puts temp_convert(temp_f)
