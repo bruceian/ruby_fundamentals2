@@ -5,6 +5,14 @@ students = {
 }
 
 # Below displays cohort and number of people in the class.
-students.map do |cohort, att|
-  puts "#{cohort.to_s}: #{att} students"
+def show_hash(hash)
+hash.map do |cohort, att|
+  puts "#{cohort}: #{att} students"
 end
+end
+
+show_hash(students)
+
+students[:cohort4] = 43
+
+puts students.keys
