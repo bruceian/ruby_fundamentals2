@@ -9,10 +9,13 @@ def show_hash(hash)
 hash.map do |cohort, att|
   puts "#{cohort}: #{att} students"
 end
+" "
 end
 
 show_hash(students)
 
 students[:cohort4] = 43
+
+show_hash(students)
 
 puts students.keys
